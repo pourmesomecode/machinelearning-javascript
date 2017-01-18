@@ -1,0 +1,19 @@
+Machine Learning in JavaScript
+
+- k-nearest-neighbor algorithm(kNN)
+    - k-nearest-neighbor is supervised learning.
+    - Features
+        - Features are what you an object down into as you're processing with Machine Learning
+    - How kNN works
+        - Put all the data onto a graph (including the mystery point)
+        - Measure the distances between the mystery point and every other point.
+        - Pick a number. Three is usually good for small data sets.
+        - Figure out what the three closest points to the mystery points are.
+        - The majority of the three closest points to the mystery points is the answer.
+
+     - The algorithm
+        - We'll build objects of two different classes for this algorithm: the "Node" and a "NodeList". A Node represents a single data point from the set, whether it's a pre-label (training) point, or an unknown point. The NodeList manages all the nodes and also does some canvas drawing to graph them all.
+        - The Node constructor has nothing to do it just expects an object with the properties "type", "area", "rooms"
+        - We need to normalize our data.
+            - So have normalization our values the lowest number of rooms (1) becomes 0 and the highest number of rooms (10) becomes 1
+            - Similarly the smallest area (250) becomes 0 and the largest area (1700) becomes 1
